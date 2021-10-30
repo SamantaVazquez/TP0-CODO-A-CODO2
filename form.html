@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="../TP integrador/imagenes/form.png" 
+    type="image/x-icon">
+    <!----Fuente----->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <!----Iconos----->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!----Estilos----->
+    <link rel="stylesheet" href="../TP integrador/miestilo.css"> 
+    <script src="./validar.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center";>Viajes Argentina</h1>
+    <hr>
+<!----Enlaces cabecera-->
+    <div id="icono-menu">
+            <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div class="menu">
+            <nav class="nav-main">
+                <i class="fas fa-globe"></i>
+                <!---Links izquierda-->
+                <ul class="nav-menu"> 
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+                <!---Links derecha-->
+                <ul class="nav-menu-right">
+                    <li>
+                        <a href="https://www.google.com/?hl=es">
+                        <i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        <hr>
+    <div class="form">
+        <h1>Formulario de contacto</h1>
+    <form name="formulario" method="post" target= "_blank" action="datos.html" onsubmit="return validar()">
+        <fieldset>
+        <label>Nombre:
+        <p><input type="text" id="nombre" name="nombre" autocomplete="off"  placeholder="Ingrese su nombre" class="input-f"></p>
+        </label>
+        <label>Apellido:
+            <p><input type="text" id="apellidos" name="apellido" autocomplete="off"  placeholder="Ingrese su apellido"></p>
+            </label>
+        <label>Edad:
+        <p><input type="number" id="edad" name="edad" autocomplete="off"  
+            placeholder="Ingrese su edad"></p>
+        </label>
+        <label>Telefono:
+            <p><input type="telefono" id="telefono" name="telefono" autocomplete="off"  
+                placeholder="Ingrese un telefono"></p>
+            </label>
+        <label>Email:
+            <p><input type="email" id="email" name="email" autocomplete="off" placeholder="Ingrese su email"></p>
+            </label>
+        <label>
+            <p style="margin-top: 10px; margin-bottom: 10px;">
+                <label for="listado">Horario de contacto: </label>
+                <select name="hoario" id="listado">
+                    <option value="1">  8am - 12 am</option>
+                    <option value="2"> 12am - 4  pm</option>
+                    <option value="3">  4pm - 8 pm</option>
+                </select>
+            </p>
+        </label>
+        <label >
+        <p style="margin-top: 10px; margin-bottom: 10px; text-decoration:underline;"><input type="checkbox" name="condi">Acepto enviar mis Datos. </p>
+        </label>
+        <p><input type="submit" class="btn-enviar" value="Enviar"></p>
+    </fieldset>
+</form></div>
+<!-- Redes -->
+<div class="social">
+    <p><b> Siguenos</b>
+                <i class="fas fa-smile-wink"></i>
+                <i class="fas fa-camera"></i>
+                <i class="fas fa-kiwi-bird"></i>
+    </p>
+</div>
+<!-- Footer -->
+<footer class="footer">
+    <h3>Copyright</h3>
+</footer>
+</body>
+</html>
