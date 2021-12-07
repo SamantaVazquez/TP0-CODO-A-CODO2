@@ -20,6 +20,9 @@ function validar() {
         else if(edad.length > 3){
             alert("Usted es muy grande para viajar!");
              return false;}
+        else if(edad < 0){
+                alert("Usted no es mayor de edad");
+                 return false;}
         else if(isNaN(telefono) ||telefono.length > 10){
             alert("El telefono ingresado es muy largo, ingresar solo numeros");
         return false;}
